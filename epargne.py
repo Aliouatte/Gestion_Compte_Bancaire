@@ -39,7 +39,7 @@ class CompteEpargne(CompteBancaire):
         self.nombredemois = nombredemois
         print(f"Capitalisation sur {self.nombredemois} au taux d'intérét de {self.taux} %")
        
-        for i in range(12):
+        for i in range(self.nombredemois):
             interet = (self.solde) * self.taux
             self.solde += interet/100
      
